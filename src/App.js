@@ -45,7 +45,7 @@ function App() {
     store.dispatch(loadUser())
     async function getStripeApiKey(){
       console.log("im in get stripe api key");
-      const {data} = await axios.get("https://my-ecommerce-application.herokuapp.com/user/payment/stripeApi");
+      const {data} = await axios.get("https://myecommerceapplication.herokuapp.com/user/payment/stripeApi");
       console.log("stripeData",data)
       setStripeApiKey(data.stripeApiKey);
      
