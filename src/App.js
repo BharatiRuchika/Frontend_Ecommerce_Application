@@ -45,7 +45,7 @@ function App() {
     store.dispatch(loadUser())
     async function getStripeApiKey(){
       console.log("im in get stripe api key");
-      const {data} = await axios.get("user/payment/stripeApi");
+      const {data} = await axios.get("/user/payment/stripeApi");
       console.log("stripeData",data)
       setStripeApiKey(data.stripeApiKey);
      
