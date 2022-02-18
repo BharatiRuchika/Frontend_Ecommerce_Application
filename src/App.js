@@ -51,7 +51,7 @@ function App() {
      
     }
     getStripeApiKey();
-  }, [])
+  }, [stripeApiKey])
 
   const { user, isAuthenticated, loading } = useSelector(state => state.auth)
   // const {loading,user} = useSelector(state=>state.auth);
