@@ -22,7 +22,7 @@ const Login = ({history,location}) => {
         console.log("im in login");
        if(error){
          console.log("error is true",error);
-           alert.error(error);
+         
            dispatch(clearErrors());
        }
     }, [dispatch,alert,isAuthenticated,error,history])
