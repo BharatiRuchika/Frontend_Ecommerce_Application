@@ -39,6 +39,7 @@ import ProductReviews from './components/admin/ProductReview'
 // import userEvent from "@testing-library/user-event";
 import {useSelector} from "react-redux";
 function App() {
+  console.log("im in app function");
   const [stripeApiKey,setStripeApiKey] = useState("");
   useEffect(() => {
     console.log("im here");
